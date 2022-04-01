@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800;900&family=Roboto:wght@100;300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #000;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navbar i {
+    color: white;
+}
+
+.navbar .logo {
+    width: 60px;
+    height: 8vh;
+    grid-column: 2/3;
+}
+
+.navbar .menu {
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover {
+    color: grey;
+}
+
+.navbar .menu-bar {
+    display: none;
+}
+
+.navbar .shoping {
+    grid-column: 8/9;
+}
+
+/* SECTION MAIN */
+
+.hero {
+    height: 84vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .8)), url(../IMG/bg.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .info--content {
+    grid-column: 7/10;
+    grid-row: 3/7;
+    color: white;
+}
+
+.hero h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.hero h1 {
+    font-size: 5em;
+    color: #05e2ff;
+}
+
+.hero p {
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero .btn {
+    font-size: 1em;
+    background: none;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px #05e2ff;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover {
+    background-color: #05e2ff;
+    color: #000;
+}
+
+/* SECTION  FOOTER */
+
+footer {
+    background-color: #000;
+}
+
+.footer {
+    display: grid;
+    height: 8vh;
+    align-items: center;
+    color: white;
+    grid-template-areas: 
+    "listen--online follow--me social--network" ;
+}
+
+.footer .listen--online {
+    grid-template-areas: listen--online;
+    display: flex;
+    justify-content: center;
+    background-color: #05e2ff;
+    padding: 25px;
+    color: black;
+}
+
+.footer .listen--online .fa-solid {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer .follow--me {
+    grid-template-areas: follow--me;
+    text-align: center;
+}
+
+.footer .social--network {
+    grid-template-areas: social--network;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.footer .social--network .fa-brands {
+    margin-right: 15px;
+    color: #05e2ff;
+}
+
+.footer .social--network .fa-brands:hover {
+    color: white;
+}
+
+
+
